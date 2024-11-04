@@ -1,0 +1,23 @@
+﻿@page "/"
+
+@inject HttpClient Http
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+The app status is: @Status
+
+@code
+{
+    public string Status { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Status = await Http.GetStringAsync("api/Status");
+
+        await base.OnInitializedAsync();
+    }
+}
