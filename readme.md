@@ -1,21 +1,26 @@
-# ASP.NET Core Sample Feature Architecture
+# Blazor WebAssembly Hosted Project
+## Overview
+This project is a Blazor WebAssembly application built upon the architecture of the AspNetCoreEnterprisePlatform by Ben Abt. It showcases how to integrate the Mediator Pattern within a Blazor WebAssembly context, leveraging dependency injection for modular and maintainable code.
 
-by [BEN ABT](www.benjamin-abt.com)
+## Getting Started
+### Prerequisites
+- .NET 9 SDK (preview version, ensure it’s installed on your system)
 
-![Title](title.png)
+### Forking the Repository
+- To start, fork the AspNetCoreEnterprisePlatform repository to get access to its architecture and features.
 
-## Goal
+### Running the Application
+After setting everything up, run the application using:
 
-This solution represents a sample platform based on ASP.NET Core and Domain Driven Design.
+```dotnet run```
 
-Features is implemented exclusively through a modular, interchangeable feature architecture based on Domain Driven Architecture principles.
+Visit https://localhost:{port} to access your Blazor WebAssembly application.
 
-## Best Practices
+## Contributing
+Feel free to contribute to this project by forking the repository, making improvements, or reporting issues. If you have ideas or enhancements, submit a pull request!
 
-Furthermore, many recommendations of community best practices are included, including an event architecture based on Mediator, generating OpenAPI documents at compile time based on Swashbuckle, Operation-based Logging with Serilog, and much more.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This project is the basis for many of my productive customer projects, my own software, the forum mycsharp.de as well as it serves as the basis for my training series "Flexible and modern Enterprise Applications with ASP.NET Core and Azure".
-
-## Remarks
-
-> The structure of this solution is designed to emphasize the separation of the individual components.
+## Acknowledgments
+Special thanks to Ben Abt for his insightful architecture and guidance.
